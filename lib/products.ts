@@ -1,0 +1,41 @@
+export type Product = {
+  name: string;
+  slug: string;
+  description: string;
+  price: number;
+  oldPrice?: number;
+  category: string;
+  sport: "Cricket" | "Football";
+  sizes: string[];
+  stock: number;
+  sku: string;
+  rating: number;
+  featured: boolean;
+  imageIndex: number;
+  brand: string;
+  type: string;
+  specifications: string[];
+};
+
+export const products: Product[] = [
+  { name:"Aero Pro English Willow Bat", slug:"aero-pro-english-willow-bat", description:"Grade A English willow with a full spine, balanced pickup and a competition-ready face.", price:7499, oldPrice:8999, category:"Cricket", sport:"Cricket", sizes:["Harrow","SH"], stock:8, sku:"VS-CR-101", rating:4.9, featured:true, imageIndex:0, brand:"Nitin Sports", type:"Cricket Bat", specifications:["Grade A English willow","9-piece cane handle","Approx. 1160–1210 g","Pre-knocked face"] },
+  { name:"Forge Kashmir Willow Bat", slug:"forge-kashmir-willow-bat", description:"Hard-wearing Kashmir willow built for nets, club cricket and developing players.", price:2299, oldPrice:2799, category:"Cricket", sport:"Cricket", sizes:["6","Harrow","SH"], stock:16, sku:"VS-CR-102", rating:4.7, featured:true, imageIndex:1, brand:"Nitin Sports", type:"Cricket Bat", specifications:["Selected Kashmir willow","Rubber grip","Toe guard fitted","Ready for practice"] },
+  { name:"Test Crown Leather Ball", slug:"test-crown-leather-ball", description:"Four-piece hand-stitched leather ball with a pronounced seam and dependable shape retention.", price:549, oldPrice:649, category:"Cricket", sport:"Cricket", sizes:["Red","White","Pink"], stock:30, sku:"VS-CR-103", rating:4.8, featured:false, imageIndex:2, brand:"Crown", type:"Cricket Ball", specifications:["Four-piece leather","Hand stitched","156 g senior weight","Water-resistant finish"] },
+  { name:"Impact Flex Batting Gloves", slug:"impact-flex-batting-gloves", description:"Flexible multi-section protection with a ventilated palm for long crease time.", price:1599, oldPrice:1899, category:"Protective Gear", sport:"Cricket", sizes:["Youth","S","M","L"], stock:21, sku:"VS-CR-104", rating:4.7, featured:false, imageIndex:3, brand:"Nitin Sports", type:"Batting Gloves", specifications:["High-density finger rolls","Leather palm","Sweat-wicking lining","Split-thumb protection"] },
+  { name:"Sentinel Cricket Helmet", slug:"sentinel-cricket-helmet", description:"A lightweight helmet with an adjustable steel grille and shock-absorbing liner.", price:2899, oldPrice:3399, category:"Protective Gear", sport:"Cricket", sizes:["Youth","M","L"], stock:11, sku:"VS-CR-105", rating:4.8, featured:true, imageIndex:4, brand:"Sentinel", type:"Helmet", specifications:["Impact-tested shell","Adjustable steel grille","Moisture-control padding","Rear size dial"] },
+  { name:"Stride Pro Batting Pads", slug:"stride-pro-batting-pads", description:"Contoured lightweight pads that balance wrap-around protection with quick movement.", price:2199, category:"Protective Gear", sport:"Cricket", sizes:["Youth","Adult"], stock:14, sku:"VS-CR-106", rating:4.6, featured:false, imageIndex:5, brand:"Stride", type:"Batting Pads", specifications:["Seven-cane profile","High-density knee roll","Padded ankle wings","Quick-release straps"] },
+  { name:"Matchday Wooden Stumps", slug:"matchday-wooden-stumps", description:"Tournament-size ash stumps with precision-turned grooves and two balanced bails.", price:1299, oldPrice:1499, category:"Training Equipment", sport:"Cricket", sizes:["Junior","Senior"], stock:18, sku:"VS-CR-107", rating:4.7, featured:false, imageIndex:6, brand:"Matchday", type:"Stumps", specifications:["Solid ash wood","Set of 3 with 2 bails","Weather-sealed finish","Includes carry sleeve"] },
+  { name:"CoreDry Cricket Jersey", slug:"coredry-cricket-jersey", description:"Breathable match jersey with stretch side panels and sweat-moving fabric.", price:899, category:"Teamwear", sport:"Cricket", sizes:["S","M","L","XL","XXL"], stock:40, sku:"VS-CR-108", rating:4.6, featured:false, imageIndex:7, brand:"CoreDry", type:"Jersey", specifications:["130 GSM performance knit","Sublimation-ready","Athletic fit","UPF 30 fabric"] },
+  { name:"Velocity Match Football", slug:"velocity-match-football", description:"A thermally bonded size 5 match ball tuned for a consistent flight and soft first touch.", price:1899, oldPrice:2299, category:"Football", sport:"Football", sizes:["3","4","5"], stock:24, sku:"VS-FB-201", rating:4.9, featured:true, imageIndex:8, brand:"Velocity", type:"Football", specifications:["Thermally bonded panels","Butyl bladder","All-weather cover","Match-weight build"] },
+  { name:"Vector FG Football Boots", slug:"vector-fg-football-boots", description:"Responsive firm-ground boots with a textured control zone and locked-in heel.", price:3499, oldPrice:4199, category:"Football", sport:"Football", sizes:["UK 6","UK 7","UK 8","UK 9","UK 10"], stock:13, sku:"VS-FB-202", rating:4.8, featured:true, imageIndex:9, brand:"Vector", type:"Football Boots", specifications:["Firm-ground studs","Textured synthetic upper","Cushioned sockliner","Reinforced heel cup"] },
+  { name:"Apex Club Football Jersey", slug:"apex-club-football-jersey", description:"A clean, lightweight jersey designed for match intensity and team customization.", price:999, category:"Teamwear", sport:"Football", sizes:["S","M","L","XL","XXL"], stock:35, sku:"VS-FB-203", rating:4.7, featured:false, imageIndex:10, brand:"Apex", type:"Jersey", specifications:["Breathable mesh zones","Quick-dry knit","Club crest ready","Regular athletic fit"] },
+  { name:"Guardian Goalkeeper Kit", slug:"guardian-goalkeeper-kit", description:"Padded goalkeeper top paired with high-grip gloves for confident handling.", price:2499, oldPrice:2899, category:"Protective Gear", sport:"Football", sizes:["S","M","L","XL"], stock:10, sku:"VS-FB-204", rating:4.8, featured:true, imageIndex:11, brand:"Guardian", type:"Goalkeeper Kit", specifications:["Padded elbow zones","Latex grip palms","Moisture-wicking jersey","Adjustable glove wrist"] },
+  { name:"Shield Lite Shin Guards", slug:"shield-lite-shin-guards", description:"Anatomical low-profile guards with breathable backing and secure sleeves.", price:749, category:"Protective Gear", sport:"Football", sizes:["Kids","Youth","Adult"], stock:28, sku:"VS-FB-205", rating:4.6, featured:false, imageIndex:12, brand:"Shield", type:"Shin Guards", specifications:["Impact-dispersing shell","Foam backing","Compression sleeves","Left/right shaping"] },
+  { name:"Tempo Training Cone Set", slug:"tempo-training-cone-set", description:"High-visibility flexible cones for drills, boundaries and coaching sessions.", price:599, category:"Training Equipment", sport:"Football", sizes:["Set of 10","Set of 20","Set of 30"], stock:42, sku:"VS-FB-206", rating:4.7, featured:false, imageIndex:13, brand:"Tempo", type:"Training Cones", specifications:["Flexible PE construction","High-visibility colour","Carry strap included","Weather resistant"] },
+  { name:"Quickstep Agility Ladder", slug:"quickstep-agility-ladder", description:"Adjustable flat-rung ladder for speed, coordination and footwork training.", price:999, oldPrice:1199, category:"Training Equipment", sport:"Football", sizes:["4 m","6 m"], stock:19, sku:"VS-FB-207", rating:4.8, featured:false, imageIndex:14, brand:"Quickstep", type:"Agility Ladder", specifications:["Adjustable rungs","Tangle-resistant straps","Carry bag included","Indoor/outdoor use"] },
+  { name:"ProLock Goal Net", slug:"prolock-goal-net", description:"A durable braided goal net built for academy drills and regular club use.", price:2799, category:"Accessories", sport:"Football", sizes:["6×4 ft","8×6 ft","12×6 ft"], stock:7, sku:"VS-FB-208", rating:4.7, featured:false, imageIndex:15, brand:"ProLock", type:"Goal Net", specifications:["UV-stabilized cord","Reinforced corners","Attachment clips included","Weather resistant"] }
+];
+
+export const formatPrice = (value:number) => new Intl.NumberFormat("en-IN", { style:"currency", currency:"INR", maximumFractionDigits:0 }).format(value);
+export const productBySlug = (slug:string) => products.find((product) => product.slug === slug);
+export const spritePosition = (index:number) => `${(index % 4) * 33.333}% ${Math.floor(index / 4) * 33.333}%`;
