@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[9817,["23","static/chunks/23-c7e420339dec2158.js","609","static/chunks/609-34d84060b719786a.js","779","static/chunks/779-98d52783377d63c9.js","177","static/chunks/app/layout-8f4602c695dc9498.js"],"ShopProvider"]
+3:I[7121,[],""]
+4:I[4581,[],""]
+5:I[779,["23","static/chunks/23-c7e420339dec2158.js","609","static/chunks/609-34d84060b719786a.js","779","static/chunks/779-98d52783377d63c9.js","177","static/chunks/app/layout-8f4602c695dc9498.js"],"FloatingWhatsApp"]
+6:I[2206,["23","static/chunks/23-c7e420339dec2158.js","609","static/chunks/609-34d84060b719786a.js","779","static/chunks/779-98d52783377d63c9.js","177","static/chunks/app/layout-8f4602c695dc9498.js"],"Toaster"]
+:HL["/_next/static/css/523df3cce359c0b1.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/523df3cce359c0b1.css","precedence":"next"}]],["$","html",null,{"lang":"en-IN","children":["$","body",null,{"className":"antialiased","children":["$","$L2",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}]}],["$","$L5",null,{}],["$","$L6",null,{"position":"top-center","richColors":true}]]}]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"8usaqwYAUa3qHi5oXdqpt"}
